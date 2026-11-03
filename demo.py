@@ -1,5 +1,5 @@
 import torch
-from models import OptimizedSwinMoE # 假设你的模型结构在这个文件里
+from models import OptimizedSwinMoE 
 import timm
 
 def run_demo():
@@ -11,7 +11,7 @@ def run_demo():
     # 2. 生成随机输入 (Batch Size=2, Channels=3, H=224, W=224)
     dummy_input = torch.randn(2, 3, 224, 224)
     
-    # 3. 前向传播演示
+    # 3. 前向传播
     print("Running forward pass...")
     logits, pos_logits = model(dummy_input, class3_label=None)
     
