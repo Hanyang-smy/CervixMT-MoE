@@ -21,14 +21,15 @@ You can easily verify the architecture code by running the demo.
 1. **Install requirements:**
    ```bash
    pip install torch torchvision timm
+2. **Run the demonstration script:**
+   ```bash
+   python demo.py
 
-2. Run the demonstration script:
+ 
 
-bash
-python demo.py
 Expected Output: The script will output the shape of the input tensor, the shape of the main classification logits, and the position classification logits, confirming the model is successfully constructed and executed.
 
-⚠️ Data and Weights Availability (Ethical & IP Constraints)
+## ⚠️ Data and Weights Availability (Ethical & IP Constraints)
 To ensure transparency while strictly complying with ethical regulations and institutional policies, please note the following:
 
 Dataset Privacy: The private HMUCervix dataset cannot be publicly released. This is due to strict patient privacy regulations and the Institutional Review Board (IRB) policies. Researchers from academic institutions may request access to the dataset for non-commercial purposes by signing a formal data-use agreement.
