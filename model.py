@@ -30,6 +30,7 @@ class PositionAwareMoE(nn.Module):
             for _ in range(num_experts)
         ])
         self.gate = nn.Sequential(
+            nn.BatchNorm1d(in_features),      
             nn.Linear(in_features, 256),
             nn.ReLU(),
             nn.Linear(256, num_experts)
